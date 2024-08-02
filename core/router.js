@@ -4,8 +4,8 @@ const { postValidationRules } = require('../utils/validators')
 
 const ROUTER = express.Router()
 
-ROUTER.get('/', posts)
-ROUTER.post('/add', postValidationRules(), postAdd)
-ROUTER.get('/:postID', postByID)
+ROUTER.get('/posts', posts)
+ROUTER.post('/posts/add', postValidationRules(), postAdd)
+ROUTER.get('/posts/:postID', postByID)
 
 module.exports = ROUTER
