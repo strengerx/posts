@@ -1,6 +1,6 @@
 const express = require('express')
-const { posts, postAdd, postByID } = require('../controller/postController')
-const { postValidationRules } = require('../utils/validators')
+const { posts, postAdd, postByID } = require('../controllers/postsController')
+const { postValidationRules } = require('../utilities/validators')
 
 const ROUTER = express.Router()
 
